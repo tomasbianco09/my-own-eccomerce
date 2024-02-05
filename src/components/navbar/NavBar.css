@@ -1,0 +1,89 @@
+
+.header {
+}
+
+.header-container {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: 6.5rem;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e1e1e;
+    z-index: 100;
+}
+
+.upperNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Añade esta propiedad para ocultar el desbordamiento del texto */
+    height: 1.5rem;
+    background-color: rgb(178, 144, 106);
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold; 
+    animation: slideText 10s linear;
+}
+
+@keyframes slideText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    list-style: none;
+
+}
+
+.nav-ul li {
+    margin: 0 1rem 0 1rem;
+}
+
+.nav-img {
+    height: 50px;
+    margin: 0 3.5rem 0 3.5rem;
+}
+
+.nav-h2 {
+    margin: 0;
+    height: 200px;
+}
+
+.nav-ul a:hover {
+    color: #a58a7c;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: #c2c5aa;
+    transition: color 0.1s ease;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* 
+.nav-ul a:hover {
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid #FDE852;
+    cursor: pointer;
+} */
